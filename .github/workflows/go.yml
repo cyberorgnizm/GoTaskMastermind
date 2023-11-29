@@ -22,7 +22,9 @@ jobs:
         go-version: '1.20'
 
     - name: Build
+      working-directory: ./gotaskmastermind
       run: go build -v ./gotaskmastermind
 
     - name: Test
+      working-directory: ./gotaskmastermind
       run: go test -v ./gotaskmastermind
